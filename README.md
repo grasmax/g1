@@ -2,10 +2,35 @@ Used instead of google gauge chart in https://github.com/grasmax/d4
 
 ![image](https://github.com/grasmax/g1/assets/26674731/5c31887b-b851-4174-a572-4d0387475609)
 
-`
-<body>
+How to use it:
+
+Include the js file:
+```
+<head>
   ...
-    <script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/grasmax/g1/main/tacho.js"></script>
+  ...
+```
+
+Use canvas tags and configure the tags:
+```
+<body>
+    ...
+                <table>
+                    <tr>
+                        <td valign="top">
+                            <canvas id="SOC" width="150" height="150"></canvas>
+                        </td>
+                        <td valign="top">
+                            <canvas id="PVV" width="150" height="150"></canvas>
+                        </td>
+                        <td valign="top">
+                            <canvas id="BAV" width="150" height="150"></canvas>
+                        </td>
+                    </tr>
+                </table>
+  ...
+  <script>
         var GaugePara = {
             elmtname: "SOC",
             title: "Speicher (%)",
@@ -43,4 +68,4 @@ Used instead of google gauge chart in https://github.com/grasmax/d4
         vDrawGauge();
     </script>
 </body>
-`
+```
