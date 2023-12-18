@@ -2,7 +2,7 @@
 // Nutzt html/canvas (https://www.w3schools.com/tags/ref_canvas.asp) für eine Messgeräte/Tacho/Gauge-Anzeige
 // inspiriert durch Thomas Rose und seinen Kurs https://www.linkedin.com/learning/webtechniken-lernen-4-javascript
 
-var grasmax_gauge = {
+//var grasmax_gauge = {
 	
 function vCalcRadiation(min, max, akt) {
     try {
@@ -132,4 +132,4 @@ function vDrawGauge(){
     }
 }
 
-};
+//};
