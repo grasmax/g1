@@ -5,14 +5,25 @@ Used instead of google gauge chart in https://github.com/grasmax/d4
 How to use it:
 
 Include the js file:
+Including from github [does not work.](https://github.com/grasmax/g1/issues/1)
+Include it from grasmax or download it and include it from a local folder like:
 ```
 <head>
   ...
-    <script type="text/javascript" src="https://raw.githubusercontent.com/grasmax/g1/main/tacho.js"></script>
+	<script type="text/javascript" src="http://www.grasmax.de/tacho.js"></script>
+	<script type="text/javascript" src="../../js/tacho.js"></script>
+  ...
+```
+or in Django like
+```
+<head>
+  ...
+  {% load static %}
+  <script type="text/javascript" src="{% static 'da4/tacho.js' %}"></script>
   ...
 ```
 
-Use canvas tags and configure the tags:
+Use canvas tags and configure the tags. Replace {{ ... }} with your gauge value:
 ```
 <body>
     ...
